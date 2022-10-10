@@ -21,19 +21,19 @@ class App extends React.Component {
   render() {
     return (
       <SafeAreaView>
-        <View style={styles.wrap}>
+        <View style={styles.main}>
           <Text style={{ fontSize: 40 }}>Counter</Text>
           <View style={styles.counter}>
             <TouchableOpacity style={styles.button} onPress={this.increment}>
-              <Text style={styles.btnText}>+</Text>
+              <Text style={styles.Textstyle}>+</Text>
             </TouchableOpacity>
             <Text style={{ fontSize: 70 }}>{this.state.counter}</Text>
             <TouchableOpacity style={styles.button} onPress={this.decrement}>
-              <Text style={styles.btnText}>-</Text>
+              <Text style={styles.Textstyle}>-</Text>
             </TouchableOpacity>
           </View>
           <TouchableOpacity style={styles.button} onPress={this.Reset}>
-            <Text style={styles.btnText}>Reset</Text>
+            <Text style={styles.Textstyle}>Reset</Text>
           </TouchableOpacity>
         </View>
       </SafeAreaView>
@@ -55,11 +55,11 @@ const styles = StyleSheet.create({
     margin: 40,
     borderRadius: 10
   },
-  wrap: {
+  main: {
     alignItems: 'center',
     justifyContent: 'center',
   },
-  btnText: {
+  Textstyle: {
     color: 'white'
   }
 });
