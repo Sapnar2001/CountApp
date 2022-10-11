@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { View, SafeAreaView, Text, Button, StyleSheet, TouchableOpacity } from "react-native";
+import ChildCop from "./ChildCop";
 
 
 class App extends React.Component {
@@ -11,13 +12,13 @@ class App extends React.Component {
     console.log('constructor called');
   }
 
-  increment = () => {
+  increment = (props) => {
     if (this.state.count < 10) {
       this.setState({count: this.state.count + 1});
     }
   };
 
-  decrement = () => {
+  decrement = (props) => {
     if (this.state.count > 0) {
       this.setState({count: this.state.count - 1});
     }
@@ -52,47 +53,11 @@ class App extends React.Component {
   render() {
     return (
       <SafeAreaView>
-        <View style={styles.Main}>
-          <Text style={{ fontSize: 40 }}>Counter</Text>
-          <View style={styles.counter}>
-            <TouchableOpacity style={styles.button} onPress={this.increment}>
-              <Text style={styles.Textstyle}>+</Text>
-            </TouchableOpacity>
-            <Text style={{ fontSize: 70 }}>{this.state.counter}</Text>
-            <TouchableOpacity style={styles.button} onPress={this.decrement}>
-              <Text style={styles.Textstyle}>-</Text>
-            </TouchableOpacity>
-          </View>
-          <TouchableOpacity style={styles.button} onPress={this.Reset}>
-            <Text style={styles.Textstyle}>Reset</Text>
-          </TouchableOpacity>
-        </View>
+        <ChildCop childCount={this.state.count} childInc={this.increment} childDec={this.decrement}/>
       </SafeAreaView>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  counter: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'center',
-  },
-  button: {
-    alignItems: 'center',
-    backgroundColor: 'blue',
-    padding: 10,
-    margin: 40,
-    borderRadius: 10
-  },
-  Main: {
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  Textstyle: {
-    color: 'white'
-  }
-});
 
 export default App;
