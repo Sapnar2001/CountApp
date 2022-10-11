@@ -21,7 +21,7 @@ class App extends React.Component {
   render() {
     return (
       <SafeAreaView>
-        <View style={styles.main}>
+        <View style={styles.Main}>
           <Text style={{ fontSize: 40 }}>Counter</Text>
           <View style={styles.counter}>
             <TouchableOpacity style={styles.button} onPress={this.increment}>
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     margin: 40,
     borderRadius: 10
   },
-  main: {
+  Main: {
     alignItems: 'center',
     justifyContent: 'center',
   },
