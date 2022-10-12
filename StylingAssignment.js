@@ -17,8 +17,8 @@ export class StylingAssignment extends Component {
                         <Image source={require('./Images/movie1.jpeg')} style={styles.ImageStyle} />
                     </View>
                     <View style={styles.container2}>
-                        <Text>How to train yourDragon The Hidden World</Text>
-                        <Text style={styles.textstyle}>part III</Text>
+                        <Text>How To Train yourDragon The Hidden World</Text>
+                        <Text style={styles.textstyle}>Part III</Text>
                     </View>
                     <View style={styles.container3}>
                         <TouchableOpacity style={styles.buttonContainer}>
@@ -32,14 +32,14 @@ export class StylingAssignment extends Component {
                         </TouchableOpacity>
                     </View>
                     <View style={styles.year}>
-                        <Text style={styles.yearText}>Area</Text>
+                        <Text style={styles.yearText}>year</Text>
                         <Text style={styles.yearText}>Country</Text>
                         <Text style={styles.yearText}>Length</Text>
                     </View>
                     <View style={styles.year}>
-                        <Text>2019</Text>
-                        <Text>USA</Text>
-                        <Text>112</Text>
+                        <Text style={styles.yearTextd}>2019</Text>
+                        <Text style={styles.yearUsa}>USA</Text>
+                        <Text style={styles.yearmin}>112</Text>
                     </View>
                     <View style={styles.AboutM}>
                         <Text style={styles.aboutText}>About Movie</Text>
@@ -61,7 +61,7 @@ hired tyrant named Grimmel finds it first.</Text>
 
                 </ScrollView>
                 <TouchableOpacity style={styles.buyTicket}>
-                    <Text style={styles.buyText}>Buy Ticket</Text>
+                    <Text style={styles.buyText}>BUY TICKET</Text>
                 </TouchableOpacity>
 
             </SafeAreaView>
@@ -70,7 +70,7 @@ hired tyrant named Grimmel finds it first.</Text>
 }
 const styles = StyleSheet.create({
     Container: {
-        margin: 20,
+        margin: 15,
         flexDirection: "row",
         justifyContent: "space-between",
         // backgroundColor:"red",
@@ -125,12 +125,22 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "space-between",
         paddingBottom: 10,
+        alignItems: 'center'
     },
     yearText: {
         color: "grey",
+        textAlign: 'center',
+        alignItems: 'center'
+
+    },
+    yearUsa: {
+        paddingRight: 15
+    },
+    yearmin: {
+        paddingRight: 15
     },
     AboutM: {
-        paddingVertical: 30,
+        paddingVertical: 25,
         paddingHorizontal: 20,
     },
     aboutText1: {
