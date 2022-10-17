@@ -30,7 +30,6 @@ export default class StylingAssignment extends Component {
                             if (num1 != "") {
                                 this.refs.num2ref.focus()
                             }
-
                         }}
                         value={this.state.num1}
                         maxLength={1}
@@ -94,7 +93,7 @@ export default class StylingAssignment extends Component {
 
                     <View style={styles.row1}>
                         <TouchableOpacity style={styles.textnum}
-                        g>
+                        >
                             <Text>1</Text>
                           
                         </TouchableOpacity>
@@ -173,12 +172,12 @@ const styles = StyleSheet.create({
     },
     mainOtpView: {
         margin: 10,
+        marginHorizontal:50,
         marginBottom: 30,
         justifyContent: 'center',
         alignItems: 'center',
         flexDirection: "row",
         justifyContent: "space-evenly",
-
     },
     otpBox: {
         justifyContent: 'center',
@@ -193,6 +192,7 @@ const styles = StyleSheet.create({
         width: 50,
         borderWidth: 1,
         borderColor: 'rgb(235,235,235)',
+        textAlign:'center'
     },
     button: {
         backgroundColor: 'white',
