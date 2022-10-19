@@ -48,7 +48,7 @@ export class MyntraPage extends Component {
                 <ScrollView>
                     <View style={styles.Images}>
                         <View style={{ margin: 10 }}>
-                            <Image source={require('./Images/men5.jpeg')} style={styles.menImg} />
+                            <Image source={require('./Images/men0.webp')} style={styles.menImg} />
                             <Image source={require('./Images/heart2.png')} style={styles.heart} />
                             <Text style={styles.newText}>New</Text>
                             <Text style={styles.line1}>Tommy Hilfiger</Text>
@@ -58,7 +58,7 @@ export class MyntraPage extends Component {
                         </View>
 
                         <View style={{ margin: 10 }}>
-                            <Image source={require('./Images/men5.jpeg')} style={styles.menImg} />
+                            <Image source={require('./Images/men0.webp')} style={styles.menImg} />
                             <Image source={require('./Images/heart2.png')} style={styles.heart} />
                             <Text style={styles.newText}>New</Text>
                             <Text style={styles.line1}>Tommy Hilfiger</Text>
@@ -70,7 +70,7 @@ export class MyntraPage extends Component {
 
                     <View style={styles.Images}>
                         <View style={{ margin: 10 }}>
-                            <Image source={require('./Images/men5.jpeg')} style={styles.menImg} />
+                            <Image source={require('./Images/men0.webp')} style={styles.menImg} />
                             <Image source={require('./Images/heart2.png')} style={styles.heart} />
                             <Text style={styles.newText}>New</Text>
                             <Text style={styles.line1}>Tommy Hilfiger</Text>
@@ -80,7 +80,7 @@ export class MyntraPage extends Component {
                         </View>
 
                         <View style={{ margin: 10 }}>
-                            <Image source={require('./Images/men5.jpeg')} style={styles.menImg} />
+                            <Image source={require('./Images/men0.webp')} style={styles.menImg} />
                             <Image source={require('./Images/heart2.png')} style={styles.heart} />
                             <Text style={styles.newText}>New</Text>
                             <Text style={styles.line1}>Tommy Hilfiger</Text>
