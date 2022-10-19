@@ -5,7 +5,7 @@ export default class ChangeColor extends Component {
        super(props);
       this.state = {
            value:'',
-           color:'red',
+           color:'',
        };
     }
           buttonclick=()=>{
@@ -19,8 +19,8 @@ export default class ChangeColor extends Component {
 render() {
     return (
         <SafeAreaView style={styles.mainContainer}>
-        <View style={{backgroundColor: this.state.color }}>
-            <Text> color is {this.state.color}</Text>
+        <View style={{backgroundColor: this.state.color , marginTop:20,  width:"100%",height:100}}>
+            {/* <Text> color is {this.state.color}</Text> */}
         </View>
         <View>
             <TextInput type="text" value={this.setState.value} placeholder="enter color" 
@@ -53,6 +53,7 @@ alignItems: 'center',
     button: { // box:{
        borderColor:"red",
        borderWidth: 1,
+       borderRadius:15,
         height:200,
         width:200,
         margin:30,
