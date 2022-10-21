@@ -13,6 +13,10 @@ import {name as appName} from './app.json';
 // import  TabNavigator from './TabNavigator';
 import  MyntraTab   from './MyntraTab'
 // import MyntraPage from './MyntraPage';
+import sliderAssignment from './sliderAssignment';
+import listAssignment from './listAssignment';
+// import webb from './webb';
 
 
-AppRegistry.registerComponent(appName, () => MyntraTab);
+// AppRegistry.registerComponent(appName, () =>listAssignment);
+AppRegistry.registerComponent(appName, () =>sliderAssignment);
