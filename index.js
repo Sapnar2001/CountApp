@@ -8,9 +8,9 @@ import {AppRegistry} from 'react-native';
 //import Otp  from './Otp';
 //import StylingAssignment  from './StylingAssignment';
 //import ChangeColor  from './ChangeColor';
-//import Navigation from './Navigation';
+import Navigation from './Navigation';
 import {name as appName} from './app.json';
-// import  TabNavigator from './TabNavigator';
+ import  TabNavigator from './TabNavigator';
 import  MyntraTab   from './MyntraTab'
 // import MyntraPage from './MyntraPage';
 import sliderAssignment from './sliderAssignment';
@@ -19,4 +19,4 @@ import listAssignment from './listAssignment';
 
 
 // AppRegistry.registerComponent(appName, () =>listAssignment);
-AppRegistry.registerComponent(appName, () =>sliderAssignment);
+ AppRegistry.registerComponent(appName, () =>Navigation);

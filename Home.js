@@ -14,6 +14,18 @@ export default class Home extends React.Component {
                 <TouchableOpacity style={styles.button}  onPress={() => this.props.navigation.navigate('Assignment3')}  >
                     <Text style={styles.buttonText}>Assignment3</Text>
                 </TouchableOpacity>
+                <TouchableOpacity style={styles.button}  onPress={() => this.props.navigation.navigate('Assignment4')}  >
+                    <Text style={styles.buttonText}>SLIDER</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.button}  onPress={() => this.props.navigation.navigate('Assignment4')}  >
+                    <Text style={styles.buttonText}>WEBVIEW</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.button}  onPress={() => this.props.navigation.navigate('Assignment4')}  >
+                    <Text style={styles.buttonText}>MyntraUI</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.button}  onPress={() => this.props.navigation.navigate('Assignment7')}  >
+                    <Text style={styles.buttonText}>SectionList</Text>
+                </TouchableOpacity>
       </View>
         )
     }
@@ -31,11 +43,12 @@ const styles = StyleSheet.create({
         backgroundColor: 'rgb(90,128,236)',
         width: "65%",
         height:60,
-        margin:50,
+        margin:10,
         justifyContent:'center'
         //    marginHorizontal:10,
     },
     buttonText:{
         textAlign: 'center',
+         color:'white',
     },
 });
