@@ -12,44 +12,44 @@ class App extends React.Component {
     console.log('constructor called');
   }
 
-  increment = (props) => {
-    if (this.state.count < 10) {
-      this.setState({count: this.state.count + 1});
-    }
-  };
+  // increment = (props) => {
+  //   if (this.state.count < 10) {
+  //     this.setState({count: this.state.count + 1});
+  //   }
+  // };
 
-  decrement = (props) => {
-    if (this.state.count > 0) {
-      this.setState({count: this.state.count - 1});
-    }
-  };
+  // decrement = (props) => {
+  //   if (this.state.count > 0) {
+  //     this.setState({count: this.state.count - 1});
+  //   }
+  // };
 
-  static getDerivedStateFromProps() {
-    console.log('Parent getDerivedStateFromProps called');
-    return null;
-  }
+  // static getDerivedStateFromProps() {
+  //   console.log('Parent getDerivedStateFromProps called');
+  //   return null;
+  // }
 
-  componentDidMount() {
-    console.log('Parent componentDidMount called');
-  }
+  // componentDidMount() {
+  //   console.log('Parent componentDidMount called');
+  // }
 
-  componentDidUpdate() {
-    console.log('Parent componentDidUpdate called');
-  }
+  // componentDidUpdate() {
+  //   console.log('Parent componentDidUpdate called');
+  // }
 
-  shouldComponentUpdate() {
-    console.log('Parent shouldComponentUpdate called');
-    return true;
-  }
+  // shouldComponentUpdate() {
+  //   console.log('Parent shouldComponentUpdate called');
+  //   return true;
+  // }
 
-  getSnapshotBeforeUpdate() {
-    console.log('Parent getSnapshotBeforeUpdate called');
-    return null;
-  }
+  // getSnapshotBeforeUpdate() {
+  //   console.log('Parent getSnapshotBeforeUpdate called');
+  //   return null;
+  // }
 
-  componentWillUnmount() {
-    console.log('Parent componentWillUnmount');
-  }
+  // componentWillUnmount() {
+  //   console.log('Parent componentWillUnmount');
+  // }
   render() {
     return (
       <SafeAreaView>

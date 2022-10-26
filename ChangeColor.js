@@ -8,6 +8,11 @@ export default class ChangeColor extends Component {
            color:'',
        };
     }
+    // increment = () => {
+    //     if (this.state.count < 10) {
+    //       this.setState({count: this.state.count + 1});
+    //     }
+    //   };
           buttonclick=()=>{
             var n=this.state.value;
             let uppercasetext = n.toLowerCase()

@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, Switch, SafeAreaView } from 'react-native';
 import Slider from '@react-native-community/slider';
-export default class sliderAssignment extends Component {
+export default class SliderAssignment extends Component {
     constructor(props) {
         super(props);
         this.state = {

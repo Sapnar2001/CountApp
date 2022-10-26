@@ -3,7 +3,7 @@ import { StyleSheet, ActivityIndicator} from 'react-native';
 import WebView  from 'react-native-webview';
 
 
-export default class webb extends Component {
+export default class Webb extends Component {
   ActivityIndicatorElement() {
     return (
       <ActivityIndicator

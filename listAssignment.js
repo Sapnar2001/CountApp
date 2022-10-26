@@ -100,10 +100,11 @@ const Item = ({ title }) => (
 
 const newData = [];
 
-class listAssignment extends Component {
+class ListAssignment extends Component {
   render(){
   
   data.forEach(element => {
+    console.log(element)
     if (newData.length) {
       var match= false;
 
@@ -121,8 +122,15 @@ class listAssignment extends Component {
         };
         newData.push(obj1);
       }
-    } else {
-      let obj2 = {categoryId: element.categoryId, data: [element.title]};
+    }
+    
+    
+    
+    
+    else {
+      let obj2 = {
+        categoryId: element.categoryId,
+         data: [element.title]};
       newData.push(obj2);
     }
   });
@@ -167,7 +175,7 @@ const styles = StyleSheet.create({
 });
 
 
-export default listAssignment;
+export default ListAssignment;
 
 
 
@@ -178,124 +186,121 @@ export default listAssignment;
 
 
 
+// const data = [
+//     {
+//       categoryId: 'fruits',
+//       title: 'mango',
+//       quantity: 2,
+//     },
+//     {
+//       categoryId: 'fruits',
+//       title: 'apple',
+//       quantity: 5,
+//     },
+//     {
+//       categoryId: 'fruits',
+//       title: 'coconut',
+//       quantity: 4,
+//     },
+//     {
+//       categoryId: 'fruits',
+//       title: 'orange',
+//       quantity: 2,
+//     },
+//     {
+//       categoryId: 'fruits',
+//       title: 'pomegranade',
+//       quantity: 2,
+//     },
+//     {
+//       categoryId: 'fruits',
+//       title: 'mausmi',
+//       quantity: 3,
+//     },
+//     {
+//       categoryId: 'flowers',
+//       title: 'rose',
+//       quantity: 1,
+//     },
+//     {
+//       categoryId: 'flowers',
+//       title: 'lili',
+//       quantity: 4,
+//     },
+//     {
+//       categoryId: 'flowers',
+//       title: 'jasmine',
+//       quantity: 2,
+//     },
+//     {
+//       categoryId: 'flowers',
+//       title: 'hibiscus',
+//       quantity: 8,
+//     },
+//     {
+//       categoryId: 'flowers',
+//       title: 'daffodils',
+//       quantity: 9,
+//     },
+//     {
+//       categoryId: 'flowers',
+//       title: 'seasonal flowers',
+//       quantity: 1,
+//     },
+//     {
+//       categoryId: 'flowers',
+//       title: 'sregional fruits',
+//       quantity: 1,
+//     },
+//     {
+//       categoryId: 'vegetables',
+//       title: 'potato',
+//       quantity: 8,
+//     },
+//     {
+//       categoryId: 'vegetables',
+//       title: 'tomato',
+//       quantity: 5,
+//     },
+//     {
+//       categoryId: 'vegetables',
+//       title: 'guard',
+//       quantity: 2,
+//     },
+//     {
+//       categoryId: 'vegetables',
+//       title: 'brinjal',
+//       quantity: 6,
+//     },
+//   ];
+//   const newData = [];
+//   data.forEach(element => 
+//   {
+//     if (newData.length)
+//     {
+//       var match= false;
 
-
-// const inputArray = [
-//  	{
-//  	categoryId: 'fruits',
-//  	title: 'mango',
-//  	quantity: 2,
-//  	},
-//  	{
-//  	categoryId: 'fruits',
-//  	title: 'apple',
-//  	quantity: 5,
-//  	},
-//  	{
-//  	categoryId: 'fruits',
-//  	title: 'coconut',
-//  	quantity: 4,
-//  	},
-//  	{
-//  	categoryId: 'fruits',
-//  	title: 'orange',
-//  	quantity: 2,
-//  	},
-//  	{
-//  	categoryId: 'fruits',
-//  	title: 'pomegranade',
-//  	quantity: 2,
-//  	},
-//  	{
-//  	categoryId: 'fruits',
-//  	title: 'mausmi',
-//  	quantity: 3,
-//  	},
-//  	{
-//  	categoryId: 'flowers',
-//  	title: 'rose',
-//  	quantity: 1,
-//  	},
-//  	{
-//  	categoryId: 'flowers',
-//  	title: 'lili',
-//  	quantity: 4,
-//  	},
-//  	{
-//  	categoryId: 'flowers',
-//  	title: 'jasmine',
-//  	quantity: 2,
-//  	},
-//  	{
-//  	categoryId: 'flowers',
-//  	title: 'hibiscus',
-//  	quantity: 8,
-//  	},
-//  	{
-//  	categoryId: 'flowers',
-//  	title: 'daffodils',
-//  	quantity: 9,
-//  	},
-//  	{
-//  	categoryId: 'flowers',
-//  	title: 'seasonal flowers',
-//  	quantity: 1,
-//  	},
-//  	{
-//  	categoryId: 'flowers',
-//  	title: 'sregional fruits',
-//  	quantity: 1,
-//  	},
-//  	{
-//  	categoryId: 'vegetables',
-//  	title: 'potato',
-//  	quantity: 8,
-//  	},
-//  	{
-//  	categoryId: 'vegetables',
-//  	title: 'tomato',
-//  	quantity: 5,
-//  	},
-//  	{
-//  	categoryId: 'vegetables',
-//  	title: 'guard',
-//  	quantity: 2,
-//  	},
-//  	{
-//  	categoryId: 'vegetables',
-//  	title: 'brinjal',
-//  	quantity: 6,
-//  	},
-//  	]
-
-
-//     [
+//       newData.forEach(item =>
+//       {
+//         if (item.categoryId === element.categoryId) 
 //         {
-//             title: fur,
-//             data: [item1, item2]
+//           item.data.push(element.title);
+//           match= true;
 //         }
-//     ]
-
-//     const outp=[];
-//     ==>For (item){
-//         if(outp.len){
-//             outp.map((el) => {
-//                 if(el.categoryId=== item.categoryId){
-//                     el.data.push(item)
-//                 }else {
-//                     let neData = [{
-//                         title: categoryId,
-//                         data: [...data, item]
-//                     }]
-//                  outp.push(neData)   
-//                 }
-//             })
-//         }else {
-//             let neData = [{
-//                 title: categoryId,
-//                 data: [item]
-//             }]
-//          outp.push(neData)   
+//         else
+//         {
+//         let obj1 = {
+//           categoryId: element.categoryId,
+//           data: [element.title],
+//         };
+//         newData.push(obj1);
 //         }
+//       });
 
+     
+//     } else {
+//       let obj2 = {categoryId: element.categoryId, data: [element.title]};
+//       newData.push(obj2);
 //     }
+//   });
+//   console.log(newData)
